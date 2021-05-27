@@ -6,7 +6,7 @@
 * [Testing](#testing)
 
 ## Description
->Algorithm that counts number of occurrences between keyword and phrase. After running Spring boot app, type on website: http://localhost:8080/input. User enters both inputs and clik submit button (input example). Special characters and white spaces are removed, then each string saved to database (databse view). All necessary information are being displayed on the screen (output example).
+>Algorithm that counts number of occurrences between keyword and phrase. Run Spring Boot application, use website address: http://localhost:8080/input. Enter both inputs and clik submit button (input example).<br> Special characters and white spaces are removed, afterwards strings are being saved into mysql (database view).<br>Finally, all necessary information are displayed on the screen (output example).
 
 
 ## Technogy Stack
