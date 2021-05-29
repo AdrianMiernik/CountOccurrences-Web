@@ -2,6 +2,7 @@
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 <html>
 <head>
@@ -30,11 +31,11 @@
     <tbody>
         <form:form method="get" modelAttribute="maps">
 
-        <c:forEach items="${maps}" var="map">
+        <c:forEach items="${maps}" var="map" >
     <tr>
         <td>${map.key}</td>
         <td>${map.value}</td>
-        <td> ${map.value/occurrenceLength}</td>
+        <td><fmt:formatNumber type="number" maxFractionDigits="2" value="${map.value/occurrenceLength}"/></td>
         <td>${map.value}/${occurrenceLength}</td>
     </tr>
     </c:forEach>
@@ -43,7 +44,7 @@
     <tr>
         <td><b>TOTAL Frequency:</b> </td>
         <td></td>
-        <td>${occurrenceLength/totalLength}</td>
+       <td><fmt:formatNumber type="number" maxFractionDigits="2" value="${occurrenceLength/totalLength}"/></td>
         <td>${occurrenceLength}/${totalLength}</td>
     </tr>
         </tbody>
