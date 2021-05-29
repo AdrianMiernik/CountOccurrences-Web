@@ -23,7 +23,4 @@
 ![Database](occur_mysql.png)
 
 #### Output example
-![Output](occur_output.png)
-![Output](occur_output.png)
-
 
