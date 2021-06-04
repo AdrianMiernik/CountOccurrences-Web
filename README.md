@@ -16,11 +16,11 @@
 * JSP
 
 ## Testing
-#### Input example
+#### Input example:
 ![Input](occur_input.png)
 
-#### Database example
+#### Database example:
 ![Database](occur_mysql.png)
 
-#### Output example
+#### Output example:
 ![Output](occur_output_v2.png)
